@@ -3,36 +3,9 @@
 <head>
 	<title>Roman Number</title>
 
-	<script type="text/javascript">
-		
-		function roman() {
-			var number = document.getElementById("roman").value;
+	<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
 
-			var roman = "";
-
-			var next = 0;
-
-			var num = [1000,900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
-
-			var romanSy = ["M","CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
-
-			for (var i = 0; number > 0; i++) {
-
-				next = number / num[i];
-
-				for (var j = 1; j <= next; j++) {
-					roman += romanSy[i];
-				}
-
-				number = number % num[i]
-			}
-
-
-
-			document.getElementById("output").value = roman;
-		}
-
-	</script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 
@@ -40,7 +13,7 @@
 
 	<input type="text" id="roman" />
 
-	<button onclick="roman()">click</button>
+	<button>click</button>
 
 	<p>Output:</p>
 
